@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <link rel="icon" href="https://wiki.hypixel.net/images/6/68/SkyBlock_furniture_the_hex.gif">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hex</title>
+  <link rel="stylesheet" href="Main_CSS.css">
+  <script type="text/javascript" src="items.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body style="background-color: rgb(15, 15, 30);">
+  <br><br>
+  <div style="text-align: center;">
+    <h1 style="color: mediumpurple">The Hex</h1>
+    <p style="color: mediumpurple; margin-top: -20px">
+      From <a target="_blank" style="color: mediumpurple;" href="https://wiki.hypixel.net/Main_Page">Hypixel Skyblock.</a>
+    </p>
+  </div>
+  <br>
+
+  <div class="bg1">
+    <!-- Popup for Books -->
+    <div class="hex-popup" id="books-menu" style="visibility: hidden;">
+      <h2>Books Menu</h2>
+      <p>Choose the book you want to add to your item.</p>
+      <button onclick="closePopup('books-menu')" class="backbutton">Close</button>
+    </div>
+
+    <!-- Popup for Gemstones -->
+    <div class="hex-popup" id="gemstones-menu" style="visibility: hidden;">
+      <h2>Gemstones Menu</h2>
+      <p>Choose the gemstone you want to add to your item.</p>
+      <button onclick="closePopup('gemstones-menu')" class="backbutton">Close</button>
+    </div>
+
+    <!-- Popup for Reforges -->
+    <div class="hex-popup" id="reforges-menu" style="visibility: hidden;">
+      <h2>Reforges Menu</h2>
+      <p>Choose the reforge you want to apply to your item.</p>
+      <button onclick="closePopup('reforges-menu')" class="backbutton">Close</button>
+    </div>
+
+    <!-- Popup for Essence Crafting -->
+    <div class="hex-popup" id="essence-menu" style="visibility: hidden;">
+      <h2>Essence Crafting Menu</h2>
+      <p>Choose your essence crafting options here.</p>
+      <button onclick="closePopup('essence-menu')" class="backbutton">Close</button>
+    </div>
+
+    <!-- Popup for Choose Item -->
+    <div class="hex-popup" id="item-menu" style="visibility: hidden;">
+      <h2 style="margin:0px;">Choose Your Item</h2>
+      <p style="margin:5px;">Select the item you wish to modify.</p>
+              <div class="popup-table">
+                <table id="items-table"></table>
+        </div>
+      <button onclick="closePopup('item-menu')" class="backbutton">Close</button>
+    </div>
+
+    <!-- Popup for Enchantments -->
+    <div class="hex-popup" id="enchantments-menu" style="visibility: hidden;">
+      <h2>Enchantments Menu</h2>
+      <p>Choose the enchantment you want to apply to your item.</p>
+      <button onclick="closePopup('enchantments-menu')" class="backbutton">Close</button>
+    </div>
+
+    <!-- Popup for Modifiers -->
+    <div class="hex-popup" id="modifiers-menu" style="visibility: hidden;">
+      <h2>Modifiers Menu</h2>
+      <p>Choose the modifier you want to apply to your item.</p>
+      <button onclick="closePopup('modifiers-menu')" class="backbutton">Close</button>
+    </div>
+
+    <!-- Popup for Ultimate Enchantments -->
+    <div class="hex-popup" id="ultimate-enchants-menu" style="visibility: hidden;">
+      <h2>Ultimate Enchantments Menu</h2>
+      <p>Choose the ultimate enchantment you want to apply to your item.</p>
+      <button onclick="closePopup('ultimate-enchants-menu')" class="backbutton">Close</button>
+    </div>
+
+    <!-- Table with Buttons for Popups -->
+    <table style="border-spacing: 5px; height: 100%; width: 100%; border-collapse: separate;">
+      <tbody>
+        <tr>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot"></td>
+        </tr>
+        <tr>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot">
+            <button onclick="openBooksMenu()"></button>
+            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/70/Book_JE1_BE1.png" width="40" height="40" alt="Books">
+            <div class="tooltip">
+              <span style="color: #55fe55;">Books.</span><br>
+              <span style="color: gray;">Add special books</span><br>
+              <span style="color: gray;">to your item for a</span><br>
+              <span style="color: gray;">nice stat boost.</span>
+            </div>
+          </td>
+          <td class="Hex-slot">
+            <button onclick="openGemstonesMenu()"></button>
+            <img src="https://wiki.hypixel.net/images/c/c7/SkyBlock_items_perfect_ruby_gem.png" width="40" height="40" alt="Gemstones" style="image-rendering: auto">
+            <div class="tooltip">
+              <span style="color: #55fe55;">Gemstones.</span><br>
+              <span style="color: gray;">Add gemstones</span><br>
+              <span style="color: gray;">to improve your</span><br>
+              <span style="color: gray;">item's stats.</span>
+            </div>
+          </td>
+          <td class="Hex-slot">
+            <button onclick="openEnchantmentsMenu()"></button>
+            <img src="https://static.wikia.nocookie.net/hypixel-skyblock/images/c/ca/Enchantment_Table.png" width="40" height="40" alt="Enchanting" style="image-rendering: auto">
+            <div class="tooltip">
+              <span style="color: #55fe55;">Enchantments.</span><br>
+              <span style="color: gray;">Enchant your items</span><br>
+              <span style="color: gray;">in exchange for EXP</span><br>
+              <span style="color: gray;">and books.</span>
+            </div>
+          </td>
+          <td class="Hex-slot"></td>
+        </tr>
+        <tr>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot">
+            <button onclick="openReforgesMenu()"></button>
+            <img src="https://wiki.hypixel.net/images/a/a4/SkyBlock_items_luxurious_spool.png" width="40" height="40" alt="Reforges" style="image-rendering: auto">
+            <div class="tooltip">
+              <span style="color: #55fe55;">Reforges.</span><br>
+              <span style="color: gray;">Give your items a</span><br>
+              <span style="color: gray;">little personalization</span><br>
+              <span style="color: gray;">for more stats.</span>
+            </div>
+          </td>
+          <td class="Hex-slot">
+            <button onclick="openItemMenu()">Choose your item</button>
+          </td>
+          <td class="Hex-slot">
+            <button onclick="openModifiersMenu()"></button>
+            <img src="https://wiki.hypixel.net/images/b/b8/SkyBlock_items_recombobulator_3000.png" width="40" height="40" alt="Modifiers" style="image-rendering: auto">
+            <div class="tooltip">
+              <span style="color: #55fe55;">Modifiers.</span><br>
+              <span style="color: gray;">Apply miscellaneous</span><br>
+              <span style="color: gray;">item modifiers.</span>
+            </div>
+          </td>
+          <td class="Hex-slot"></td>
+        </tr>
+        <tr>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot">
+            <button onclick="openUltimateEnchantsMenu()"></button>
+            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/55/Enchanted_Book.gif" width="40" height="40" alt="Ultimate Enchantments">
+            <div class="tooltip">
+              <span style="color: #55fe55;">Ultimate enchantments.</span><br>
+              <span style="color: gray;">Add a special enchantment</span><br>
+              <span style="color: gray;">Only one ultimate per item</span>
+            </div>
+          </td>
+          <td class="Hex-slot">
+            Clear item
+          </td>
+          <td class="Hex-slot">
+            <button onclick="openEssenceMenu()"></button>
+            <img src="https://wiki.hypixel.net/images/7/75/SkyBlock_items_dragon_essence.png" width="40" height="40" alt="Essence" style="image-rendering: auto">
+            <div class="tooltip">
+              <span style="color: #55fe55;">Essence crafting.</span><br>
+              <span style="color: gray;">Convert items into</span><br>
+              <span style="color: gray;">dungeon items or add</span><br>
+              <span style="color: gray;">stars for more stats.</span>
+            </div>
+          </td>
+          <td class="Hex-slot"></td>
+        </tr>
+        <tr>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot"></td>
+          <td class="Hex-slot"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
