@@ -146,7 +146,7 @@ const items = `[
 ]`
 
 /*
-de base ding
+base item
 
 {   "name": "item",
       "lore": "itemLore",
