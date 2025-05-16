@@ -1,6 +1,6 @@
 const items = `[
   {   "name": "Diamond Sword",
-      "lore": "",
+      "lore": "The well known minecraft sword",
       "image": "Assets/textures/minecraft/diamond_sword.png",
       "stats": {
         "attack_damage": "7",
