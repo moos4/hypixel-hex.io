@@ -1,3 +1,5 @@
+const itemData = JSON.parse(items);
+
 function openBooksMenu() { document.getElementById("books-menu").style.visibility = "visible"; }
 function openGemstonesMenu() { document.getElementById("gemstones-menu").style.visibility = "visible"; }
 function openReforgesMenu() { document.getElementById("reforges-menu").style.visibility = "visible"; }
@@ -17,8 +19,6 @@ function closePopup(popupId) {
 
 function loadItems() {
             console.log("dit word geladen")
-            // Parse the JSON data
-            var itemData = JSON.parse(items);
 
             // Get the table element where the images will be placed
             var table = document.getElementById('items-table');
@@ -55,6 +55,5 @@ function selectItem(item) {
 
 function loadSelectedItem(itemIndex) {
   const itemBox = document.getElementById("selected-item-box");
-  var itemData = JSON.parse(items);
   console.log(itemData[itemIndex].name)
 };
