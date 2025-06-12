@@ -55,6 +55,6 @@ function selectItem(item) {
 
 function loadSelectedItem(itemIndex) {
   const itemBox = document.getElementById("selected-item-box");
-  var itemData = JSON.parse(items[itemIndex]);
-  console.log(itemData.name)
+  var itemData = JSON.parse(items);
+  console.log(itemData[itemIndex].name)
 };
