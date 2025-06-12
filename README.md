@@ -1,11 +1,21 @@
-# hypixel-hex
-A [website](https://moos4.github.io/hypixel-hex.io/) that allows you to use the hypixel skyblock hex to test out what different modifiers you want to add to an item
+# Hypixel-hex
+This is a [website](https://moos4.github.io/hypixel-hex.io/) that allows you to use the hypixel skyblock hex to test out what different modifiers you want to add to an item.
 
-## updating
+made by @moos4 and @Dradshere
+
+> [!WARNING]
+> Still under developement!
+
+## Updating
 We want to keep up with all the hypixel skybock updates, but it will probably take some time before we are up-to-date.
 
-## helping us
-You can support us by just using our website and reporting bugs or giving ideas
+## Helping us
+You can support us by just using our website and reporting bugs or giving ideas.
 
-## free to use
-We won't ever charge you for anything and will (most likely) never have ads
+## Free to use
+We won't ever charge you for anything and will (most likely) never put ads on our website.
+> we might put ads on our page if too many people visit our site and github charges us money.
+
+## The textures
+All of our textures for items and such come from minecraft 1.8 or if it is an item from hypixel itself it comes from [Furfsky Reborn](https://furfsky.net/).
+![Furfsky Reborn Logo](https://furfsky.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.f54eb8ab.gif&w=640&q=75)
