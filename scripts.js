@@ -41,7 +41,7 @@ function loadItems() {
 
                 td.appendChild(img);
                 td.addEventListener("click", (event) => {
-                  selectItem.call(td)
+                  selectItem(td)
                 });
                 row.appendChild(td);
             });
