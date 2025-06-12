@@ -1,4 +1,6 @@
-const items = `[
+// this may look like an error, but i just made github think this file is a json so i can find errors more easily
+const items = `
+[
   {   "name": "Diamond Sword",
       "lore": "The well known minecraft sword",
       "image": "Assets/textures/minecraft/diamond_sword.png",
