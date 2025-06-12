@@ -55,9 +55,11 @@ function selectItem(item) {
 
 function loadSelectedItem(itemIndex) {
   const itemBox = document.getElementById("selected-item-box");
-  var item = itemData[itemIndex]
+  var item = itemData[itemIndex] // Set the item to the selected one
   var img = document.createElement('img');
   img.src = item.image; // Set image source
   img.alt = item.name; // Set alt text for the image
+  itemBox.innerHTML = '';
   itemBox.appendChild(img)
+  
 };
