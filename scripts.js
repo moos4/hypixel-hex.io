@@ -1,3 +1,5 @@
+const selectedItem
+
 function openBooksMenu() { document.getElementById("books-menu").style.visibility = "visible"; }
 function openGemstonesMenu() { document.getElementById("gemstones-menu").style.visibility = "visible"; }
 function openReforgesMenu() { document.getElementById("reforges-menu").style.visibility = "visible"; }
@@ -49,5 +51,13 @@ function loadItems() {
         }
 
 function selectItem(item) {
-  console.log(item.getAttribute('data-indexnum'))
+  selectedItem = item.getAttribute('data-indexnum');
+  closePopup('item-menu')
+  loadSelectedItem(selectedItem)
 }
+
+function loadSelectedItem(itemIndex) {
+  cons itemBox = document.getElementById("selected-item-box");
+  var itemData = JSON.parse(items.[itemIndex]);
+  console.log(itemData.name)
+};
