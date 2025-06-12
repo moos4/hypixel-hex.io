@@ -40,7 +40,7 @@ function loadItems() {
                 td.classList.add('item-slot');
 
                 td.appendChild(img);
-                td.data-indexnum = index;
+                td.setAttribute('data-indexnum',index);
                 td.addEventListener("click", (event) => {
                   selectItem(td)
                 });
@@ -49,5 +49,5 @@ function loadItems() {
         }
 
 function selectItem(item) {
-  console.log(item.data-indexnum)
+  console.log(item.getAttribute('data-indexnum'))
 }
