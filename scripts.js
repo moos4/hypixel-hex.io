@@ -1,5 +1,3 @@
-const selectedItem
-
 function openBooksMenu() { document.getElementById("books-menu").style.visibility = "visible"; }
 function openGemstonesMenu() { document.getElementById("gemstones-menu").style.visibility = "visible"; }
 function openReforgesMenu() { document.getElementById("reforges-menu").style.visibility = "visible"; }
@@ -51,9 +49,8 @@ function loadItems() {
         }
 
 function selectItem(item) {
-  selectedItem = item.getAttribute('data-indexnum');
   closePopup('item-menu')
-  loadSelectedItem(selectedItem)
+  loadSelectedItem(item.getAttribute('data-indexnum'))
 }
 
 function loadSelectedItem(itemIndex) {
