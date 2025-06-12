@@ -9,6 +9,9 @@ made by @moos4 and @Dradshere
 ## Updating
 We want to keep up with all the hypixel skybock updates, but it will probably take some time before we are up-to-date.
 
+## Our progress
+you can check our progress in [our github project](https://github.com/users/moos4/projects/1)
+
 ## Helping us
 You can support us by just using our website and reporting bugs or giving ideas.
 
