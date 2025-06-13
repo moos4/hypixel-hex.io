@@ -1,6 +1,6 @@
 const items = `
 [
-  {   "name": "debug item",
+  {   "name": "common debug item",
       "lore": "A debug item for testing",
       "image": "Assets/textures/minecraft/potato.png",
       "stats": {
@@ -20,6 +20,30 @@ const items = `
         "mending": 0,
         "swing_range": 0,
         "rarity": "common",
+        "enchant_types": [],
+        "reforge_types": []
+      }
+  },
+  {   "name": "legendary debug item",
+      "lore": "A debug item for testing",
+      "image": "Assets/textures/minecraft/potato.png",
+      "stats": {
+        "attack_damage": 0,
+        "health": 0,
+        "defense": 0,
+        "strength": 0,
+        "intelligence": 0,
+        "crit_chance": 0,
+        "crit_damage": 0,
+        "bonus_attack_speed": 0,
+        "ability_damage": 0,
+        "true_defence": 0,
+        "ferocity": 0,
+        "health_regen": 0,
+        "vitality": 0,
+        "mending": 0,
+        "swing_range": 0,
+        "rarity": "legendary",
         "enchant_types": [],
         "reforge_types": []
       }
