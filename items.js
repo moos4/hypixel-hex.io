@@ -19,7 +19,7 @@ const items = `
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": common,
+        "rarity": "common",
         "enchant_types": [],
         "reforge_types": []
       }
