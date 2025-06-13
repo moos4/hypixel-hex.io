@@ -66,5 +66,5 @@ function loadSelectedItem(itemIndex) {
   tooltipName.innerHTML = item.name;
   tooltipName.className = 'color-' + item.rarity
   itemBox.appendChild(img)
-  
+  itemTooltip.appendChild(tooltipName)
 };
