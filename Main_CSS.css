@@ -1,4 +1,3 @@
-
     .hex-popup {
         width: 400px;
         height: 400px;
@@ -164,4 +163,40 @@
     }
     body {
         font-family: MC-font;
+    }
+
+    span.color-common {
+        color: #FFFFFF !important
+    }
+
+    span.color-uncommon {
+        color: #55FF55 !important
+    }
+
+    span.color-rare {
+        color: #5555FF !important
+    }
+
+    span.color-epic {
+        color: #AA00AA !important
+    }
+
+    span.color-legendary {
+        color: #FFAA00 !important
+    }
+
+    span.color-mythic {
+        color: #FF55FF !important
+    }
+
+    span.color-divine {
+        color: #55FFFF !important
+    }
+
+    span.color-special,span.color-very-special {
+        color: #FF5555 !important
+    }
+
+    span.color-admin,span.color-supreme {
+        color: #AA0000 !important
     }

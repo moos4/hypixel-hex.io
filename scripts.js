@@ -55,11 +55,16 @@ function selectItem(item) {
 
 function loadSelectedItem(itemIndex) {
   const itemBox = document.getElementById("selected-item-box");
+  const itemTooltip = document.getElementById("selected-item-tooltip")
   var item = itemData[itemIndex] // Set the item to the selected one
   var img = document.createElement('img');
   img.src = item.image; // Set image source
   img.alt = item.name; // Set alt text for the image
   itemBox.innerHTML = '';
+  itemTooltip.innerHTML = '';
+  var tooltipName = document.createElement("span");
+  tooltipName.innerHTML = item.name;
+  tooltipName.className = 'color-' + item.rarity
   itemBox.appendChild(img)
   
 };
