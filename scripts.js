@@ -64,7 +64,7 @@ function loadSelectedItem(itemIndex) {
   itemTooltip.innerHTML = '';
   var tooltipName = document.createElement("span");
   tooltipName.innerHTML = item.name;
-  tooltipName.className = 'color-' + item.rarity
+  tooltipName.className = 'color-' + item.stats.rarity
   itemBox.appendChild(img)
   itemTooltip.appendChild(tooltipName)
 };
