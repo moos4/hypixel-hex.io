@@ -1,6 +1,4 @@
 const itemData = JSON.parse(items);
-var itemSelected = false
-var itemTooltip
 
 function openBooksMenu() { document.getElementById("books-menu").style.visibility = "visible"; }
 function openGemstonesMenu() { document.getElementById("gemstones-menu").style.visibility = "visible"; }
@@ -57,15 +55,7 @@ function selectItem(item) {
 
 function loadSelectedItem(itemIndex) {
   const itemBox = document.getElementById("selected-item-box");
-  if (itemSelected = true) {
-    itemTooltip = document.getElementById("selected-item-tooltip")
-  } else {
-    itemSelected = true
-    itemTooltip = document.createElement("div")
-    itemTooltip.setAttribute('class', "tooltip");
-    itemTooltip.setAttribute('id', "selected-item-tooltip");
-    itemBox.parentElement.appendChild(itemmTooltip);
-  };
+  const itemTooltip = document.getElementById("selected-item-tooltip")
   var item = itemData[itemIndex] // Set the item to the selected one
   var img = document.createElement('img');
   img.src = item.image; // Set image source
