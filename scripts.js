@@ -1,5 +1,6 @@
 const itemData = JSON.parse(items);
 var itemSelected = false
+var itemTooltip
 
 function openBooksMenu() { document.getElementById("books-menu").style.visibility = "visible"; }
 function openGemstonesMenu() { document.getElementById("gemstones-menu").style.visibility = "visible"; }
@@ -56,7 +57,6 @@ function selectItem(item) {
 
 function loadSelectedItem(itemIndex) {
   const itemBox = document.getElementById("selected-item-box");
-  var itemTooltip
   if (itemSelected = true) {
     itemTooltip = document.getElementById("selected-item-tooltip")
   } else {
