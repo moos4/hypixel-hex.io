@@ -67,7 +67,7 @@ const items = `
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": "0-8",
+        "rarity": "common",
         "enchant_types": [],
         "reforge_types": []
       }
@@ -91,7 +91,7 @@ const items = `
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": "0-8",
+        "rarity": "common",
         "enchant_types": [],
         "reforge_types": []
       }
@@ -115,7 +115,7 @@ const items = `
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": "0-8",
+        "rarity": "common",
         "enchant_types": [],
         "reforge_types": []
       }
@@ -139,7 +139,7 @@ const items = `
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": "0-8",
+        "rarity": "common",
         "enchant_types": [],
         "reforge_types": []
       }
@@ -163,7 +163,7 @@ const items = `
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": "0-8",
+        "rarity": "common",
         "enchant_types": [],
         "reforge_types": []
       }
@@ -187,7 +187,7 @@ const items = `
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": "0-8",
+        "rarity": "common",
         "enchant_types": [],
         "reforge_types": []
       }
@@ -216,7 +216,7 @@ base item
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": "0-8",
+        "rarity": "", // common, uncomon, rare, epic, legendary, mythic, divine, special, very special, ultimate, admin
         "enchant_types": [],
         "reforge_types": []
       }
