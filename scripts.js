@@ -68,3 +68,10 @@ function loadSelectedItem(itemIndex) {
   itemBox.appendChild(img)
   itemTooltip.appendChild(tooltipName)
 };
+
+function clearItem() {
+  const itemBox = document.getElementById("selected-item-box");
+  const itemTooltip = document.getElementById("selected-item-tooltip");
+  itemBox.innerHTML = '';
+  itemTooltip.innerHTML = '';
+}
