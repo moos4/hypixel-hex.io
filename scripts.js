@@ -72,6 +72,6 @@ function loadSelectedItem(itemIndex) {
 function clearItem() {
   const itemBox = document.getElementById("selected-item-box");
   const itemTooltip = document.getElementById("selected-item-tooltip");
-  itemBox.innerHTML = '';
+  itemBox.innerHTML = 'Choose your item';
   itemTooltip.innerHTML = '';
 }
