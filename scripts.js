@@ -73,5 +73,6 @@ function clearItem() {
   const itemBox = document.getElementById("selected-item-box");
   const itemTooltip = document.getElementById("selected-item-tooltip");
   itemBox.innerHTML = 'Choose your item';
-  itemTooltip.innerHTML = '';
+  itemTooltip.innerHTML = 'Choose your fighter!';
+  itemTooltip.style.fontSize = "10%"
 }
