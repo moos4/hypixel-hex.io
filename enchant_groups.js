@@ -132,4 +132,4 @@ const enchant_groups = `
       "Compact", "Efficiency", "Experience", "Fortune", "Lapidary", "Prismatic", "Paleontologist", "Silk Touch", "Smelting Touch"
     ]
   }
-]
+]`
