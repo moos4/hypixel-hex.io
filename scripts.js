@@ -18,7 +18,7 @@ function closePopup(popupId) {
 }
 
 function loadItems() {
-            console.log("dit word geladen")
+            console.log("Loading...")
 
             // Get the table element where the images will be placed
             var table = document.getElementById('items-table');
