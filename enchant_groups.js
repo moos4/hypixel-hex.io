@@ -124,3 +124,12 @@ const enchant_groups = `
     ]
   }
 ]
+
+[
+  {
+    "name": "Pickaxe_And_Drill",
+    "enchantments": [
+      "Compact", "Efficiency", "Experience", "Fortune", "Lapidary", "Prismatic", "Paleontologist", "Silk Touch", "Smelting Touch"
+    ]
+  }
+]
