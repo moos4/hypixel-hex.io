@@ -94,7 +94,7 @@ function loadSelectedItem(itemIndex) {
 
     const statLine = document.createElement("div");
     statLine.textContent = `${formatStatName(statName)} `;
-    const statcolor = document.createElement("span");
+    const statvalue = document.createElement("span");
     statvalue.textContent = `+${value}`;
     statvalue.style = "color:rgb(255, 0, 0)";
     statLine.appendChild(statvalue)
