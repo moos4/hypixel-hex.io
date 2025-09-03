@@ -93,7 +93,11 @@ function loadSelectedItem(itemIndex) {
     if (value === 0) continue;
 
     const statLine = document.createElement("div");
-    statLine.textContent = `${formatStatName(statName)} +${value}`;
+    statLine.textContent = `${formatStatName(statName)} `;
+    const statcolor = document.createElement("span");
+    statvalue.textContent = `+${value}`;
+    statvalue.style = "color:rgb(255, 0, 0)";
+    statLine.appendChild(statvalue)
     statsContainer.appendChild(statLine);
   }
 
