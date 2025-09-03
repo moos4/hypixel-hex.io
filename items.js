@@ -49,7 +49,7 @@ const items = `
       }
   },
   {   "name": "Diamond Sword",
-      "lore": "The well known minecraft sword",
+      "lore": "",
       "image": "Assets/textures/minecraft/diamond_sword.png",
       "stats": {
         "attack_damage": 35,

@@ -87,10 +87,9 @@ function loadSelectedItem(itemIndex) {
   statsContainer.style.marginTop = "8px";
 
   for (const [statName, value] of Object.entries(item.stats)) {
-    // Skip rarity since you already use it
+    // Skip rarity  and other groups
     if (statName === "rarity" || statName === "enchant_types" || statName === "reforge_types") continue;
     
-    // Optionally skip stats with 0 values
     if (value === 0) continue;
 
     const statLine = document.createElement("div");
