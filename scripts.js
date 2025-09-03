@@ -67,7 +67,7 @@ function loadSelectedItem(itemIndex) {
   tooltipName.className = 'color-' + item.stats.rarity
   itemBox.appendChild(img)
   itemTooltip.appendChild(tooltipName)
-  itemTooltip.style.fontSize = "100%"
+  itemTooltip.style.fontSize = "10%"
 };
 
 function clearItem() {
