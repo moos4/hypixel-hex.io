@@ -170,7 +170,7 @@ const items = `
   },
   {   "name": "Prismarine Blade",
       "lore": "",
-      "image": "moos4/hypixel-hex.io/Assets/textures/minecraft/prismarine_blade.png",
+      "image": "Assets/textures/minecraft/prismarine_blade.png",
       "stats": {
         "attack_damage": 7,
         "health": 0,
