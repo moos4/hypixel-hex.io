@@ -67,7 +67,7 @@ function loadSelectedItem(itemIndex) {
   tooltipName.className = 'color-' + item.stats.rarity
   itemBox.appendChild(img)
   itemTooltip.appendChild(tooltipName)
-  itemTooltip.style.fontSize = "10%"
+  itemTooltip.style.fontSize = "100%"
 };
 
 function clearItem() {
@@ -75,6 +75,6 @@ function clearItem() {
   const itemTooltip = document.getElementById("selected-item-tooltip");
   itemBox.innerHTML = 'Choose your item';
   itemTooltip.innerHTML = 'Choose your fighter!';
-  itemTooltip.style.fontSize = "10%"
+  itemTooltip.style.fontSize = "10%";
 }
  
