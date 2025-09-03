@@ -52,7 +52,7 @@ const items = `
       "lore": "The well known minecraft sword",
       "image": "Assets/textures/minecraft/diamond_sword.png",
       "stats": {
-        "attack_damage": 7,
+        "attack_damage" 35,
         "health": 0,
         "defense": 0,
         "strength": 0,
@@ -68,8 +68,8 @@ const items = `
         "mending": 0,
         "swing_range": 0,
         "rarity": "common",
-        "enchant_types": [],
-        "reforge_types": []
+        "enchant_types": ["Sword"],
+        "reforge_types": ["Sword"]
       }
   },
   {   "name": "Wooden Sword",
@@ -164,7 +164,7 @@ const items = `
         "mending": 0,
         "swing_range": 0,
         "rarity": "common",
-        "enchant_types": [],
+        "enchant_types": ["Sword"],
         "reforge_types": []
       }
   },
@@ -188,7 +188,7 @@ const items = `
         "mending": 0,
         "swing_range": 0,
         "rarity": "common",
-        "enchant_types": [],
+        "enchant_types": ["sword"],
         "reforge_types": []
       }
   }
@@ -199,26 +199,58 @@ base item
 
 {   "name": "item",
       "lore": "itemLore",
-      "image": "direction/to/img.png",
+      "image": "Assets/textures/minecraft/img.png",
       "stats": {
-        "attack_damage": 0,
-        "health": 0,
-        "defense": 0,
-        "strength": 0,
-        "intelligence": 0,
-        "crit_chance": 0,
-        "crit_damage": 0,
-        "bonus_attack_speed": 0,
-        "ability_damage": 0,
-        "true_defence": 0,
-        "ferocity": 0,
-        "health_regen": 0,
-        "vitality": 0,
-        "mending": 0,
-        "swing_range": 0,
-        "rarity": "", // common, uncomon, rare, epic, legendary, mythic, divine, special, very special, ultimate, admin
+        "Damage": 0,
+        "Strength": 0,
+        "Health": 0,
+        "Defense": 0,
+        "Speed": 0,
+        "Intelligence": 0,
+        "Crit Chance": 0,
+        "Crit Damage": 0,
+        "Bonus Attack Speed": 0,
+        "Ability Damage": 0,
+        "True Defense": 0,
+        "Ferocity": 0,
+        "Health Regen": 0,
+        "Vitality": 0,
+        "Mending": 0,
+        "Swing Range": 0,
+        "Magic Find": 0,
+        "Pet Luck": 0,
+        "Sea Creature Chance": 0,
+        "Double Hook Chance": 0,
+        "Fishing Speed": 0,
+        "Cold Resistance": 0,
+        "Heat Resistance": 0,
+        "Bonus Pest Chance": 0,
+        "Mining Speed": 0,
+        "Mining Spread": 0,
+        "Gemstone Spread": 0,
+        "Mining Fortune": 0,
+        "Ore Fortune": 0,
+        "Block Fortune": 0,
+        "Dwarven Metal Fortune": 0,
+        "Gemstone Fortune": 0,
+        "Farming Fortune": 0,
+        "Foraging Fortune": 0,
+        "Pristine": 0,
+        "Alchemy Wisdom": 0,
+        "Carpentry Wisdom": 0,
+        "Combat Wisdom": 0,
+        "Enchanting Wisdom": 0,
+        "Farming Wisdom": 0,
+        "Fishing Wisdom": 0,
+        "Foraging Wisdom": 0,
+        "Mining Wisdom": 0,
+        "Runecrafting Wisdom": 0,
+        "Social Wisdom": 0,
+        "Taming Wisdom": 0,
+      }
+        "rarity": "",
         "enchant_types": [],
         "reforge_types": []
-      }
+      
   }
 */
