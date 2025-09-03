@@ -52,7 +52,7 @@ const items = `
       "lore": "The well known minecraft sword",
       "image": "Assets/textures/minecraft/diamond_sword.png",
       "stats": {
-        "attack_damage" 35,
+        "attack_damage": 35,
         "health": 0,
         "defense": 0,
         "strength": 0,
