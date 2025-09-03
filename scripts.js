@@ -93,7 +93,7 @@ function loadSelectedItem(itemIndex) {
     if (value === 0) continue;
 
     const statLine = document.createElement("div");
-    statLine.textContent = `${formatStatName(statName)}: ${value}`;
+    statLine.textContent = `${formatStatName(statName)} +${value}`;
     statsContainer.appendChild(statLine);
   }
 
