@@ -3,13 +3,13 @@ const enchantments = `
   {  "name": "sharpness",
     "minecraft:attributes": [
      {
-       "id": "block_interaction_range",
+       "id": "final_meelee_damage",
        "amount": {
          "type": "linear",
-         "base": 1,
-         "per_level_above_first": 1
+         "base": 5,
+         "per_level_above_first": 5
        },
-       "operation": "add_value"
+       "operation": "add_multiplied_base"
      }
     ]
   }
