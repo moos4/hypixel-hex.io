@@ -55,20 +55,62 @@ function selectItem(item) {
 
 function loadSelectedItem(itemIndex) {
   const itemBox = document.getElementById("selected-item-box");
-  const itemTooltip = document.getElementById("selected-item-tooltip")
-  var item = itemData[itemIndex] // Set the item to the selected one
-  var img = document.createElement('img');
-  img.src = item.image; // Set image source
-  img.alt = item.name; // Set alt text for the image
+  const itemTooltip = document.getElementById("selected-item-tooltip");
+  const item = itemData[itemIndex]; // Selected item
+
+  // Clear old content
   itemBox.innerHTML = '';
   itemTooltip.innerHTML = '';
-  var tooltipName = document.createElement("span");
+
+  // Create image
+  const img = document.createElement('img');
+  img.src = item.image;
+  img.alt = item.name;
+  itemBox.appendChild(img);
+
+  // Tooltip: name
+  const tooltipName = document.createElement("div");
   tooltipName.innerHTML = item.name;
-  tooltipName.className = 'color-' + item.stats.rarity
-  itemBox.appendChild(img)
-  itemTooltip.appendChild(tooltipName)
-  itemTooltip.style.fontSize = "100%"
-};
+  tooltipName.className = 'color-' + item.stats.rarity;
+  itemTooltip.appendChild(tooltipName);
+
+  // Tooltip: lore (if present)
+  if (item.lore) {
+    const tooltipLore = document.createElement("div");
+    tooltipLore.innerHTML = "<i>" + item.lore + "</i>";
+    tooltipLore.style.color = "#aaa"; // greyed text for lore
+    itemTooltip.appendChild(tooltipLore);
+  }
+
+  // Tooltip: stats
+  const statsContainer = document.createElement("div");
+  statsContainer.style.marginTop = "8px";
+
+  for (const [statName, value] of Object.entries(item.stats)) {
+    // Skip rarity since you already use it
+    if (statName === "rarity" || statName === "enchant_types" || statName === "reforge_types") continue;
+    
+    // Optionally skip stats with 0 values
+    if (value === 0) continue;
+
+    const statLine = document.createElement("div");
+    statLine.textContent = `${formatStatName(statName)}: ${value}`;
+    statsContainer.appendChild(statLine);
+  }
+
+  itemTooltip.appendChild(statsContainer);
+
+  // Keep tooltip font size consistent
+  itemTooltip.style.fontSize = "100%";
+}
+
+// Helper: format stat names nicely
+function formatStatName(statName) {
+  return statName
+    .replace(/_/g, " ")          // replace underscores with spaces
+    .replace(/\b\w/g, c => c.toUpperCase()); // capitalize each word
+}
+
 
 function clearItem() {
   const itemBox = document.getElementById("selected-item-box");
