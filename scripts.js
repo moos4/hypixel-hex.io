@@ -108,7 +108,7 @@ function loadSelectedItem(itemIndex) {
   const toolTypeThing = document.createElement("div");
   toolTypeThing.style.marginTop = "8px";
   toolTypeThing.innerHTML = "<b>" + item.rarity + item.tooltype + "</b>";
-  toolTypeThing.appendChild(tooltipLore);
+  itemTooltip.appendChild(toolTypeThing);
   
 
   // Keep tooltip font size consistent
