@@ -107,7 +107,7 @@ function loadSelectedItem(itemIndex) {
 
   const toolTypeThing = document.createElement("div");
   toolTypeThing.style.marginTop = "8px";
-  toolTypeThing.innerHTML = "<b>" + item.rarity + item.tooltype + "</b>";
+  toolTypeThing.innerHTML = "<b class='color-" + item.rarity + "'>" + item.rarity + " " + item.tooltype + "</b>";
   itemTooltip.appendChild(toolTypeThing);
   
 
