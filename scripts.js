@@ -78,7 +78,6 @@ function loadSelectedItem(itemIndex) {
   
   // Tooltip: stats
   const statsContainer = document.createElement("div");
-  statsContainer.style.marginTop = "8px";
 
   for (const [statName, value] of Object.entries(item.stats)) {
     // Skip rarity  and other groups
@@ -103,6 +102,7 @@ function loadSelectedItem(itemIndex) {
   // Tooltip: lore (if present)
   if (item.lore) {
     const tooltipLore = document.createElement("div");
+    tooltipLore.style.marginTop = "8px";
     tooltipLore.innerHTML = "<span>" + item.lore + "</span>";
     itemTooltip.appendChild(tooltipLore);
   }
