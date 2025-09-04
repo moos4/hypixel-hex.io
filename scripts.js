@@ -93,7 +93,7 @@ function loadSelectedItem(itemIndex) {
     if (value === 0) continue;
 
     const statLine = document.createElement("div");
-    statLine.textContent = `${formatStatName(statName)} `;
+    statLine.textContent = `${formatStatName(statName)}: `;
     const statvalue = document.createElement("span");
     statvalue.textContent = `+${value}`;
     statvalue.style = "color:rgb(255, 0, 0)";
