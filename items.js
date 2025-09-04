@@ -169,13 +169,13 @@ const items = `
       }
   },
   {   "name": "Prismarine Blade",
-      "lore": "",
+      "lore": "Deals <span style="color:green">+200%</span> damage while in water.",
       "image": "Assets/textures/minecraft/prismarine_blade.png",
       "stats": {
-        "attack_damage": 7,
+        "attack_damage": 50,
         "health": 0,
         "defense": 0,
-        "strength": 0,
+        "strength": 25,
         "intelligence": 0,
         "crit_chance": 0,
         "crit_damage": 0,
@@ -187,9 +187,9 @@ const items = `
         "vitality": 0,
         "mending": 0,
         "swing_range": 0,
-        "rarity": "common",
+        "rarity": "uncommon",
         "enchant_types": ["sword"],
-        "reforge_types": []
+        "reforge_types": ["sword"]
       }
   }
 ]`
