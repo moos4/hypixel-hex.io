@@ -75,13 +75,7 @@ function loadSelectedItem(itemIndex) {
   itemTooltip.appendChild(tooltipName);
 
   // Tooltip: lore (if present)
-  if (item.lore) {
-    const tooltipLore = document.createElement("div");
-    tooltipLore.innerHTML = "<i>" + item.lore + "</i>";
-    tooltipLore.style.color = "#aaa"; // greyed text for lore
-    itemTooltip.appendChild(tooltipLore);
-  }
-
+  
   // Tooltip: stats
   const statsContainer = document.createElement("div");
   statsContainer.style.marginTop = "8px";
@@ -100,6 +94,13 @@ function loadSelectedItem(itemIndex) {
     statLine.appendChild(statvalue)
     statsContainer.appendChild(statLine);
   }
+
+  if (item.lore) {
+    const tooltipLore = document.createElement("div");
+    tooltipLore.innerHTML = "<span>" + item.lore + "</span>";
+    itemTooltip.appendChild(tooltipLore);
+  }
+
 
   itemTooltip.appendChild(statsContainer);
 
