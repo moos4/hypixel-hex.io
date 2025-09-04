@@ -22,5 +22,5 @@ We won't ever charge you for anything and will (most likely) never put ads on ou
 ## The textures
 All of our textures for items and such come from minecraft 1.8 or if it is an item from hypixel itself it comes from [Furfsky Reborn](https://furfsky.net/).
 
-![Furfsky Reborn Logo](https://github.com/user-attachments/assets/83522c4d-fa5f-4e79-bc2a-6008103eb059)
+![logo furfsky](https://github.com/user-attachments/assets/bfa3f5c7-4e28-402b-bf01-5bc7fbc5fd76)
 
