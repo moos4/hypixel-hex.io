@@ -71,7 +71,7 @@ function loadSelectedItem(itemIndex) {
   // Tooltip: name
   const tooltipName = document.createElement("div");
   tooltipName.innerHTML = item.name;
-  tooltipName.classList.add('color-' + item.stats.rarity;);
+  tooltipName.classList.add('color-' + item.stats.rarity);
   itemTooltip.appendChild(tooltipName);
 
   
