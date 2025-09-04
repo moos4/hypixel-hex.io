@@ -71,10 +71,10 @@ function loadSelectedItem(itemIndex) {
   // Tooltip: name
   const tooltipName = document.createElement("div");
   tooltipName.innerHTML = item.name;
-  tooltipName.className = 'color-' + item.stats.rarity;
+  tooltipName.classList.add('color-' + item.stats.rarity;);
   itemTooltip.appendChild(tooltipName);
 
-  // Tooltip: lore (if present)
+  
   
   // Tooltip: stats
   const statsContainer = document.createElement("div");
@@ -95,14 +95,17 @@ function loadSelectedItem(itemIndex) {
     statsContainer.appendChild(statLine);
   }
 
+  
+
+
+  itemTooltip.appendChild(statsContainer);
+
+  // Tooltip: lore (if present)
   if (item.lore) {
     const tooltipLore = document.createElement("div");
     tooltipLore.innerHTML = "<span>" + item.lore + "</span>";
     itemTooltip.appendChild(tooltipLore);
   }
-
-
-  itemTooltip.appendChild(statsContainer);
 
   // Keep tooltip font size consistent
   itemTooltip.style.fontSize = "100%";
