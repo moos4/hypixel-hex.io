@@ -18,11 +18,12 @@ const items = `
         "health_regen": 0,
         "vitality": 0,
         "mending": 0,
-        "swing_range": 0,
-        "rarity": "common",
-        "enchant_types": [],
-        "reforge_types": []
-      }
+        "swing_range": 0
+      },
+      "rarity": "common",
+      "enchant_types": [],
+      "reforge_types": [],
+      "tooltype": ""
   },
   {   "name": "legendary debug item",
       "lore": "A debug item for testing",
@@ -42,11 +43,12 @@ const items = `
         "health_regen": 0,
         "vitality": 0,
         "mending": 0,
-        "swing_range": 0,
-        "rarity": "legendary",
-        "enchant_types": [],
-        "reforge_types": []
-      }
+        "swing_range": 0
+      },
+      "rarity": "legendary",
+      "enchant_types": [],
+      "reforge_types": [],
+      "tooltype": ""
   },
   {   "name": "Diamond Sword",
       "lore": "",
@@ -66,11 +68,12 @@ const items = `
         "health_regen": 0,
         "vitality": 0,
         "mending": 0,
-        "swing_range": 0,
-        "rarity": "common",
-        "enchant_types": ["Sword"],
-        "reforge_types": ["Sword"]
-      }
+        "swing_range": 0
+      },
+      "rarity": "common",
+      "enchant_types": [],
+      "reforge_types": [],
+      "tooltype": ""
   },
   {   "name": "Wooden Sword",
       "lore": "",
@@ -90,11 +93,12 @@ const items = `
         "health_regen": 0,
         "vitality": 0,
         "mending": 0,
-        "swing_range": 0,
-        "rarity": "common",
-        "enchant_types": [],
-        "reforge_types": []
-      }
+        "swing_range": 0
+      },
+      "rarity": "common",
+      "enchant_types": [],
+      "reforge_types": [],
+      "tooltype": ""
   },
   {   "name": "Iron Sword",
       "lore": "",
@@ -114,11 +118,12 @@ const items = `
         "health_regen": 0,
         "vitality": 0,
         "mending": 0,
-        "swing_range": 0,
-        "rarity": "common",
-        "enchant_types": [],
-        "reforge_types": []
-      }
+        "swing_range": 0
+      },
+      "rarity": "common",
+      "enchant_types": [],
+      "reforge_types": [],
+      "tooltype": ""
   },
   {   "name": "Stone Sword",
       "lore": "",
@@ -138,11 +143,12 @@ const items = `
         "health_regen": 0,
         "vitality": 0,
         "mending": 0,
-        "swing_range": 0,
-        "rarity": "common",
-        "enchant_types": [],
-        "reforge_types": []
-      }
+        "swing_range": 0
+      },
+      "rarity": "common",
+      "enchant_types": [],
+      "reforge_types": [],
+      "tooltype": ""
   },
   {   "name": "Golden Sword",
       "lore": "",
@@ -162,11 +168,12 @@ const items = `
         "health_regen": 0,
         "vitality": 0,
         "mending": 0,
-        "swing_range": 0,
-        "rarity": "common",
-        "enchant_types": ["Sword"],
-        "reforge_types": []
-      }
+        "swing_range": 0
+      },
+      "rarity": "common",
+      "enchant_types": ["Sword"],
+      "reforge_types": [],
+      "tooltype": ""
   },
   {   "name": "Prismarine Blade",
       "lore": "Deals <span style='color:green'>+200%</span> damage while in water.",
@@ -186,11 +193,12 @@ const items = `
         "health_regen": 0,
         "vitality": 0,
         "mending": 0,
-        "swing_range": 0,
-        "rarity": "uncommon",
-        "enchant_types": ["sword"],
-        "reforge_types": ["sword"]
-      }
+        "swing_range": 0
+      },
+      "rarity": "uncommon",
+      "enchant_types": ["sword"],
+      "reforge_types": ["sword"],
+      "tooltype": "sword"
   }
 ]`
 
@@ -246,11 +254,13 @@ base item
         "Mining Wisdom": 0,
         "Runecrafting Wisdom": 0,
         "Social Wisdom": 0,
-        "Taming Wisdom": 0,
-      }
-        "rarity": "",
-        "enchant_types": [],
-        "reforge_types": []
+        "Taming Wisdom": 0
+      },
+      "rarity": "", 
+      "enchant_types": [],
+      "reforge_types": [],
+      "tooltype": "" could be anything but just use a normal thing
+        
       
   }
 */

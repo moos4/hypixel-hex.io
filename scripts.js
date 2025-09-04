@@ -71,7 +71,7 @@ function loadSelectedItem(itemIndex) {
   // Tooltip: name
   const tooltipName = document.createElement("div");
   tooltipName.innerHTML = item.name;
-  tooltipName.classList.add('color-' + item.stats.rarity);
+  tooltipName.classList.add('color-' + item.rarity);
   itemTooltip.appendChild(tooltipName);
 
   
@@ -80,8 +80,6 @@ function loadSelectedItem(itemIndex) {
   const statsContainer = document.createElement("div");
 
   for (const [statName, value] of Object.entries(item.stats)) {
-    // Skip rarity  and other groups
-    if (statName === "rarity" || statName === "enchant_types" || statName === "reforge_types") continue;
     
     if (value === 0) continue;
 
@@ -106,6 +104,12 @@ function loadSelectedItem(itemIndex) {
     tooltipLore.innerHTML = "<span>" + item.lore + "</span>";
     itemTooltip.appendChild(tooltipLore);
   }
+
+  const toolTypeThing = document.createElement("div");
+  toolTypeThing.style.marginTop = "8px";
+  toolTypeThing.innerHTML = "<b>" + item.rarity + item.tooltype "</b>";
+  toolTypeThing.appendChild(tooltipLore);
+  
 
   // Keep tooltip font size consistent
   itemTooltip.style.fontSize = "100%";
