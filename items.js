@@ -169,7 +169,7 @@ const items = `
       }
   },
   {   "name": "Prismarine Blade",
-      "lore": "Deals <span style="color:green">+200%</span> damage while in water.",
+      "lore": "Deals <span style='color:green'>+200%</span> damage while in water.",
       "image": "Assets/textures/minecraft/prismarine_blade.png",
       "stats": {
         "attack_damage": 50,
