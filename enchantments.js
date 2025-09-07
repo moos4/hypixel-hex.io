@@ -1,6 +1,6 @@
 const enchantments = `
 [
-  {  "name": "respiration",
+  {  "name": "Respiration",
     "attributes": [
      "1": {
        "id": "respiration",
@@ -12,8 +12,8 @@ const enchantments = `
   }
 ]`
 
-/*
-{  "name": "any",
+
+{  "name": "Overload",
     "attributes": [
      "1": {
        "id": "crit_damage",
@@ -29,5 +29,25 @@ const enchantments = `
      }
     ]
   }
-*/
+
+{  "name": "",
+    "attributes": [
+     "1": {
+       "id": "",
+       "levels" : [
+       0,
+       ]
+     }
+    ]
+  }
+{  "name": "Divine Gift",
+    "attributes": [
+     "1": {
+       "id": "magic_find",
+       "levels" : [
+       2, 4, 6
+       ]
+     }
+    ]
+  }
 
