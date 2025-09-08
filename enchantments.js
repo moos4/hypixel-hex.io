@@ -46,4 +46,38 @@ const enchantments = `
      }
     ]
   }
+{  "name": "Growth",
+    "attributes": [
+     "1": {
+       "id": "health",
+       "levels" : [
+       15, 30, 45, 60, 75, 90, 105
+       ]
+     }
+    ]
+  }
+{  "name": "Protection",
+    "attributes": [
+     "1": {
+       "id": "defense",
+       "levels" : [
+       4, 8, 12, 16, 20, 25, 30
+       ]
+     }
+    ]
+  }
+{  "name": "",
+    "attributes": [
+     "1": {
+       "id": "",
+       "levels" : [
+       0,
+       ]
+     }
+    ]
+  }
+
+
+
+
 ]`
