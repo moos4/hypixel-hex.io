@@ -10,10 +10,7 @@ const enchantments = `
      }
     ]
   }
-]`
-
-
-{  "name": "Overload",
+  {  "name": "Overload",
     "attributes": [
      "1": {
        "id": "crit_damage",
@@ -29,7 +26,6 @@ const enchantments = `
      }
     ]
   }
-
 {  "name": "",
     "attributes": [
      "1": {
@@ -50,4 +46,4 @@ const enchantments = `
      }
     ]
   }
-
+]`
